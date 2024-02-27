@@ -5,6 +5,7 @@ import kz.aitu.assik4sp.repositories.UserRepositoryInterface;
 import kz.aitu.assik4sp.services.interfaces.UserServiceInterface;
 import org.springframework.stereotype.Service;
 
+import java.sql.Date;
 import java.util.List;
 @Service
 
@@ -32,7 +33,31 @@ public class UserService implements UserServiceInterface {
     }
 
     @Override
+    public List<User> getByFname(String fname) {
+        return repo.findByFname(fname);
+    }
+
+    @Override
     public List<User> getBySurname(String sname) {
         return repo.findBySname(sname);
+    }
+
+    @Override
+    public List<User> getByDateofbirth(Date dateofbirth) {
+        return repo.findByDateofbirth(dateofbirth);
+    }
+
+    @Override
+    public List<User> getByHeight(int height) {
+        return repo.findByHeight(height);
+    }
+
+    @Override
+    public List<User> getByWeight(int weight) {
+        return repo.findByWeight(weight);
+    }
+    @Override
+    public List<User> getByGender(String gender) {
+        return repo.findByGender(gender);
     }
 }

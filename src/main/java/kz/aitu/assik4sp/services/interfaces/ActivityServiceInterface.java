@@ -3,7 +3,7 @@ package kz.aitu.assik4sp.services.interfaces;
 import kz.aitu.assik4sp.models.Activity;
 
 import java.sql.Time;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 public interface ActivityServiceInterface {
@@ -16,5 +16,4 @@ public interface ActivityServiceInterface {
     List<Activity> getByDistance(double distance);
     List<Activity> getByCalories(int calories_burned);
     List<Activity> getByNotes(String notes);
-
 }

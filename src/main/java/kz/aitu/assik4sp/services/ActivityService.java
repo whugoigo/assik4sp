@@ -6,7 +6,7 @@ import kz.aitu.assik4sp.services.interfaces.ActivityServiceInterface;
 import org.springframework.stereotype.Service;
 
 import java.sql.Time;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 @Service
@@ -61,4 +61,6 @@ public class ActivityService implements ActivityServiceInterface {
     public List<Activity> getByNotes(String notes) {
         return repo.findByNotes(notes);
     }
+
+
 }

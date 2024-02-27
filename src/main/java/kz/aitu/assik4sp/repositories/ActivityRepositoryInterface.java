@@ -3,7 +3,7 @@ package kz.aitu.assik4sp.repositories;
 import kz.aitu.assik4sp.models.Activity;
 
 import java.sql.Time;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
