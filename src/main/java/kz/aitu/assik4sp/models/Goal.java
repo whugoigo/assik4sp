@@ -8,7 +8,7 @@ import java.sql.Date;
 @Data
 @Entity
 @Table(name = "goals")
-public class Goal {
+public class Goal//Represents a goal  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int goalid;
