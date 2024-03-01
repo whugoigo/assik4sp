@@ -1,3 +1,4 @@
+// Importing necessary things
 package kz.aitu.assik4sp.models;
 
 import jakarta.persistence.*;
@@ -10,7 +11,7 @@ import java.sql.Date;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // All below represnets users info
     private int userid;
     private String fname;
     private String sname;
